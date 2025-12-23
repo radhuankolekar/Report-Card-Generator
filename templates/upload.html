@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Marks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0; padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center; color: #333; margin-bottom: 30px;
+        }
+        label {
+            display: block; margin-bottom: 5px; font-weight: bold; color: #555;
+        }
+        input[type="text"], input[type="file"] {
+            width: 100%; padding: 10px; margin-bottom: 20px;
+            border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;
+            font-size: 14px;
+        }
+        button {
+            width: 100%; padding: 12px; background-color: #007bff;
+            border: none; border-radius: 5px; color: white;
+            font-size: 16px; cursor: pointer; transition: 0.3s;
+        }
+        button:hover { background-color: #0056b3; }
+        @media (max-width: 600px) {
+            .container { margin: 20px; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Excel and Enter Report Details</h2>
+        <form method="POST" enctype="multipart/form-data">
+            <label>College Name:</label>
+            <input type="text" name="college_name" required>
+            <label>Class Name:</label>
+            <input type="text" name="class_name" required>
+            <label>Semester:</label>
+            <input type="text" name="semester" required>
+            <label>Academic Year:</label>
+            <input type="text" name="academic_year" required>
+            <label>Upload Excel:</label>
+            <input type="file" name="file" accept=".xlsx" required>
+            <button type="submit">Generate Report Cards</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Reports</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Report Cards Generated</h2>
+
+    <!-- DOWNLOAD ALL -->
+    <a href="{{ url_for('download_all') }}">
+        📦 Download All Report Cards (ZIP)
+    </a>
+
+    <hr>
+
+    <!-- INDIVIDUAL DOWNLOADS -->
+    {% for file in files %}
+        <a href="{{ url_for('download', filename=file) }}">
+            Download {{ file }}
+        </a>
+    {% endfor %}
+</div>
+</body>
+</html>

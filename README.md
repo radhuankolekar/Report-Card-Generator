@@ -66,10 +66,10 @@ pip install -r requirements.txt
 python report_card.py
 
 ### 📝 User Input (College & Academic Details)
-![User Input](Screenshot 2025-12-23 193112.png)
+![User Input](screenshots/Screenshot 2025-12-23 193112.png)
 
 ### 📄 Generated PDF Report Card
-![PDF Output](Screenshot 2025-12-23 193152.png)
+![PDF Output](screenshots/Screenshot 2025-12-23 193152.png)
 
 ### PDF review
 ![PDF review](Screenshot 2025-12-23 193531.png)

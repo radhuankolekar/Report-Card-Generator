@@ -72,4 +72,4 @@ python report_card.py
 ![PDF Output](Screenshot 2025-12-23 193152.png)
 
 ### PDF review
-![PDF review].(Screenshot 2025-12-23 193531.png)
+![PDF review](Screenshot 2025-12-23 193531.png)
